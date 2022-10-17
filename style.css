@@ -170,18 +170,18 @@ nav button {
 
 /*==============Category============*/
 
-.category__button{
+.category__buttons{
     background: var(--colr-primary-light);
     color: var(--color-primary);
     display: inline-block;
     padding: 0.5rem 1rem;
-    border-radius: var(--card-border-radius-2);
+    border-radius: var(--card-border-radius-1);
     font-weight: 600;
     font-size: 0.8rem;
     text-align: center;
 }
 
-.category__button:hover {
+.category__buttons:hover {
     color: var(--color-white);
 }
 
@@ -227,4 +227,27 @@ nav button {
 
 .featured .post__thumbnail {
     height: fit-content ;
+}
+
+/* ============POSTS STYLES======== */
+.posts__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+    margin-bottom: 4rem;
+}
+
+
+/* ========================Category Buttons==================== */
+.category__buttons {
+    padding: .4rem 0;
+    border-top: 2px solid var(--color-gray-900);
+    border-bottom: 2px solid var(--color-gray-700);
+}
+
+.category__buttons-container {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
 }
